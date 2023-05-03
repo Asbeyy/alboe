@@ -38,9 +38,9 @@ scene.add( ground );
 
 camera.position.z = 4;
 camera.position.y = 1;
-if (window.innerWidth < 400 ) {
+if (window.innerWidth < 500 ) {
   camera.position.z = 5;
-  camera.position.y = 1.6;
+  camera.position.y = .6;
 }
 //camera.position.x = -3
 
@@ -50,7 +50,7 @@ if (window.innerWidth < 400 ) {
 // Load 3D Model
 const loader = new GLTFLoader();
 
-loader.load( ThreeDModule , function ( gltf ) {
+loader.load( ThreeDModule, function ( gltf ) {
 
   //LIGHT
   const light = new THREE.DirectionalLight(0xffffff, 1.9);
