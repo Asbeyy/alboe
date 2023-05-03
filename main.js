@@ -49,7 +49,7 @@ if (window.innerWidth < 400 ) {
 // Load 3D Model
 const loader = new GLTFLoader();
 
-loader.load( '/public/scene.gltf', function ( gltf ) {
+loader.load( '/public/machine3d/scene.gltf', function ( gltf ) {
 
   //LIGHT
   const light = new THREE.DirectionalLight(0xffffff, 1.9);
