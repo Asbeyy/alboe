@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+import ThreeDModule from '/public/machine3d/scene.gltf'
 
 const socialButton = document.getElementById("socials")
 
@@ -49,7 +50,7 @@ if (window.innerWidth < 400 ) {
 // Load 3D Model
 const loader = new GLTFLoader();
 
-loader.load( '/public/machine3d/scene.gltf', function ( gltf ) {
+loader.load( ThreeDModule , function ( gltf ) {
 
   //LIGHT
   const light = new THREE.DirectionalLight(0xffffff, 1.9);
