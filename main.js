@@ -39,7 +39,7 @@ scene.add( ground );
 camera.position.z = 4;
 camera.position.y = 1;
 if (window.innerWidth < 500 ) {
-  camera.position.z = 5;
+  camera.position.z = 4;
   camera.position.y = .6;
 }
 //camera.position.x = -3
